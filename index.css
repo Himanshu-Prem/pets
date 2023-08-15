@@ -1,0 +1,210 @@
+/*css reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*css variables*/
+
+/*navigation bar*/
+#navbar{
+    display: flex;
+    position: relative;
+}
+
+#navbar::before{
+    content: " ";
+    background-color: rgb(27, 29, 28);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+/*navigation bar: logo and images*/
+.logo{
+
+    margin: 10px 25px;
+}
+
+.logo img{
+    margin: 16px 25px;
+    height: 70px;
+    border: 2px solid black;
+  border-radius: 43px;
+    
+}
+/*navigation bar: list styling*/
+#navbar ul{
+    display: flex;
+    margin: 50px 5px;
+    font-family: 'Rubik', sans-serif;
+    
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 20px;
+    border: 2px solid cornsilk;
+    border-radius: 8px;
+    margin: 0px 12px;
+}
+
+#navbar ul li a{
+   
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li a:hover{
+    color: black;
+}
+
+/*section home*/
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 62px 150px 80px 150px;
+    height: 260px;
+}
+#home::before{
+    content: " ";
+    background: url(background.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 533px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+   
+}
+#home h1{
+    color: rgb(4, 4, 4);
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+#home p{
+    color: rgb(4, 4, 4);
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif;
+}
+/*services section*/
+#services{
+    margin: 10px 30px;
+    display: flex;
+}
+#services .box{
+    border: 3px solid brown;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgb(228, 244, 228);
+
+}
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+    border: 2px solid green;
+    border-radius: 25px;
+    
+}
+/*client section*/
+#client-section{
+    height: 350px;
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(back3.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.client-items{
+    padding: 34px;
+}
+.client-items img{
+    height: 200px;
+}
+
+/*contact section*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url(contact3.jpg) no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 9px;
+    
+}
+#contact-box form{
+    width: 30%;
+}
+#contact-box label{
+    font-size: 1.3 rem;
+    font-family:'Oswald', sans-serif ;
+}
+
+
+
+
+/*utility class*/
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.h-secondary{
+    font-size: 2.0rem;
+    padding: 12px;
+    font-family: 'Oswald', sans-serif;
+}
+.btn{
+    padding: 2px 20px;
+    border: 3px solid rgb(94, 23, 23);
+    background: none;
+    margin: 15px;
+    font-size: 1.5em;
+    border-radius: 30px;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+}
+.centre{
+    text-align: center;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
